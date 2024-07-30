@@ -2,8 +2,16 @@
 Template repository representing a simple ml repository structure with branches dealing with both r&amp;d and productization.
 
 
-This branch "main" represents the final productized and ready to build and deploy codebase.
+This branch "research_and_development" represents the iterative exploration and experimentation carried out in jupyter notebooks.
 
-It will be worked in and will accept pull requests from the develop branch
+You will find all notebooks under the "notebooks" folder, having the following format:
 
-In case you were looking for some jupyter notebooks or other reasearch and development artifacts, please check out the "research_and_development" branch instead.
+```bash
+YYYY-MM-DD-<initials>-task-subtask.ipynb
+```
+
+These notebooks' outputs should be cleared before being committed to this repository, as otherwise file size.
+
+I would advise using the "jupytext" library to handle the autoconversion of notebooks to a notebook-compatible .py format for code commit purposes.
+
+Combine this with DVC to version control your data and datasets outside of git and github.
